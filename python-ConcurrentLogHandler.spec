@@ -1,16 +1,14 @@
-# TODO
-# - better group
 %define 	module	ConcurrentLogHandler
 Summary:	Concurrent logging handler (drop-in replacement for RotatingFileHandler)
 Name:		python-%{module}
 Version:	0.8.4
-Release:	0.1
-License:	Apahe 2.0
+Release:	1
+License:	Apache 2.0
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/C/%{module}/%{module}-%{version}.tar.gz
 # Source0-md5:	6d1665c645711380d29c06a7017eed49
-URL:		http://pypi.python.org/ConcurrentLogHandler
-BuildRequires:	python-distribute
+URL:		http://pypi.python.org/pypi/ConcurrentLogHandler/
+#BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.228
 Requires(post,preun):	/sbin/chkconfig
@@ -18,7 +16,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Concurrent logging handler (drop-in replacement for RotatingFileHandler)
+Concurrent logging handler (drop-in replacement for
+RotatingFileHandler).
 
 %prep
 %setup -q -n %{module}-%{version}
