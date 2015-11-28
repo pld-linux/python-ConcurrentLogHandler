@@ -2,7 +2,7 @@
 Summary:	Concurrent logging handler (drop-in replacement for RotatingFileHandler)
 Name:		python-%{module}
 Version:	0.8.4
-Release:	1
+Release:	2
 License:	Apache 2.0
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/C/%{module}/%{module}-%{version}.tar.gz
